@@ -1,0 +1,11 @@
+<h1>Locations</h1>
+
+<ul *ngIf="parts">
+    <li *ngFor="let part of parts">
+        <p class="name">{{ part.name }}</p>
+        <p class="airdate">{{ part.air_date }}</p>
+        <p class="episode">{{ part.episode }}</p>
+        <!--<a class="image"> <img src="{{ part.image }}" alt="{{ part.name }}"> </a>
+        <a class="site" href="{{ part.url }}" target="-blank">Source</a> -->
+    </li>
+</ul>

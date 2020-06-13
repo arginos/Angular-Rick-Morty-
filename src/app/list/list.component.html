@@ -1,0 +1,12 @@
+<h1>Characters</h1>
+
+<ul *ngIf="parts">
+    <li *ngFor="let part of parts">
+
+        <p class="name">{{ part.name }}</p>
+        <p class="species">{{ part.species }}</p>
+        <a class="image"> <img src="{{ part.image }}" alt="{{ part.name }}"> </a>
+        <a class="site" href="{{ part.url }}" target="-blank">Source</a>
+
+    </li>
+</ul>
